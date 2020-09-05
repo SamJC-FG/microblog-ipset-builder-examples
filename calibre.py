@@ -2,7 +2,7 @@ import json
 import urllib.request
 
 IPSET = []
-IPLISTLINK = "https://calibreapp.com/agents.json" #Fetch the Calibre agent IPs
+IPLISTLINK = "https://calibreapp.com/agents.json" #Fetch the Calibre agent IPs via hosted JSON file
 RESPONSE = urllib.request.urlopen(IPLISTLINK)
 DATA = json.loads(RESPONSE.read())
 for ENTRY in DATA:
